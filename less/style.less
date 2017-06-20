@@ -1,0 +1,385 @@
+@import 'normalize';
+@import 'variables';
+@import 'base';
+/* ==================================== */
+
+*,h1,h2,h3,h4,h5,h6,p,a,ul,ol,li{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+.container-fluid{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* MENU */
+#menu{
+	background: @nav-color;
+	font-size: 16px;
+	font-family: @dosis-font-stack;
+	font-weight: 900;
+
+	.logo {
+   		margin-top: 10px;	
+	}
+	.navbar-right {
+        margin-top: 10px;
+	}
+	.navbar-left {
+        margin-top: 10px;
+    }
+	.navbar-inverse{
+		background: @nav-color;
+		padding: 2%;
+		color: @white;
+
+	}
+
+	a{	
+		color: @white;
+		&:hover{
+			text-decoration: none;
+			color: @sea-buckthorn;
+		}
+
+	}
+	.caret{
+		color: @sea-buckthorn;
+	}
+
+
+}
+
+
+/* ... */
+
+
+/* SLIDER */
+
+.item{
+	h2{
+		font-family: @raleway-font-stack;
+		font-size: 6em;
+		font-weight: 900;
+	}
+	.carousel-caption{
+		top: 40%;
+		h3{
+			font-familly: @georgia-font-stack;
+		}
+		span{
+			font-size: 0.8em;
+		}
+		p{
+			font-size: 1.7em;
+		}
+		.btn{
+			margin : 3%;
+			padding: 2% 5%;
+  			color: @white;
+ 			border-radius: 3em;
+  			background-color: rgba(255, 255, 255, 0.2);
+  			font-size: 1.4em;
+  			font-family: @raleway-font-stack;
+  			font-weight:bold;
+
+		}
+	}
+
+}
+
+/* ... */
+
+/* About */
+
+#about{
+	padding : 5% 15% 0 15%;
+	font-family: @droidserif-font-stack;
+	font-size: 14px;
+	h3{
+		font-weight: bold;
+		font-family: @montserrat-font-stack;
+	}
+	h3::after{
+		background: @nav-color;
+    	content: "";
+    	display: block;
+    	height: 0.1em;
+    	margin: 1.2em 0 1.2em 0;
+    	width: 1.5em;
+	}
+	#btn {
+		font-size: 1.4em;
+		font-weight: bold;
+		font-family: @montserrat-font-stack;
+		margin:8% 0 5% 0;
+		border: 2px solid @nav-color;
+	}
+}
+
+
+/* ... */
+
+/* FEATURES */
+.features{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	background: url('images/features.jpg') no-repeat  center;
+	color: @white;
+	height: 40em;
+	h3{
+		font-family: @dosis-font-stack;
+		font-size: 3em;
+		font-weight: bold;
+	}
+	p{
+		font-family: @raleway-font-stack;
+		font-size: 1.4em;
+	}
+}
+
+/* ... */
+
+/* SPECIAL MENUS */
+
+#wrapper{
+	padding: 6% 0% 6% 0%;
+	font-size: 1.4em;
+	.info{
+ 		padding : 2% ;
+
+		h3{
+			font-weight: bold;
+			font-family: @montserrat-font-stack;
+		}
+		p{		
+			font-family: @droidserif-font-stack;
+		}
+		a{
+			color: @alto;
+
+			&:hover{
+				text-decoration: none;
+				color: @Emperor;
+			}
+		}
+	}
+	.info2{
+		margin : 5% 0 4% 0;
+		.info
+	}
+
+}
+
+/* RESERVATION */
+#reservation{
+	background: url('images/bg.jpg') no-repeat  center;
+	color: @white;
+
+	p{
+		font-family: @droidserif-font-stack;
+		font-size: 2.2em;
+		font-style: italic;
+		text-align: center;
+		margin: 2%;
+		
+	}
+	.btn{
+		color: @white;
+		font-size: 1.8em;
+		font-family: @montserrat-font-stack;
+		font-weight: bold;
+		font-style: none;
+		border: 2px solid @white;
+  		background-color: rgba(255, 255, 255, 0.2);
+  		margin: 3% 0 5% 0;
+	}	
+}
+
+/* ... */
+
+/* BLOG */
+#blog{
+	padding: 0 10% 5% 10%;
+	font-family: @raleway-font-stack;
+	font-size: 1.4em;
+	h2{
+		font-weight: bold;
+		margin: 5%;
+		font-size: 3em;
+		font-family: @dosis-font-stack;
+	}
+	.new{
+		img{
+			margin: 5%;
+			display: inline-block;
+		}
+
+		p{
+			margin-bottom: 10%;
+		}
+		a{
+			color: @sea-buckthorn;
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+/* ... */
+
+/* BOTTOM */
+#bot{
+	padding : 5%;
+	background: @Mine-Shaft;
+	color: @white;
+	font-family: @raleway-font-stack;
+	font-size: 1.4em;
+	h3{
+		font-family: @dosis-font-stack;
+	}
+	h3::after{
+		background: @sea-buckthorn;
+    	content: "";
+    	display: block;
+    	height: 0.1em;
+    	margin: 5% 0 7% 0;
+    	width: 1.5em;
+	}
+	.popularrecipes{
+
+		ul li.sec{
+			
+			list-style:none;
+			overflow:hidden;
+			margin:5% 0;
+			padding-bottom:5%;
+			border-bottom:1px solid @fuscous-gray;
+
+			img{
+				float:left;
+				margin-right:5%;
+			}	
+
+			a{
+				color: @white;
+				text-decoration:none;
+
+				&:hover{
+					color: @sea-buckthorn;
+				}
+			}	
+
+		}
+		cite{
+			color: @sea-buckthorn;
+
+		}
+	}
+	.categories,.post{
+		ul li{
+			
+			list-style:none;
+			margin:7% 0;
+			border-bottom:1px solid @fuscous-gray;
+
+			a{
+				color: @white;
+				text-decoration:none;
+
+				&:hover{
+					color: @sea-buckthorn;
+				}
+			}	
+
+		}
+		cite{
+			font-size: 0.6em;
+		}
+	}
+	.contact{
+		margin: 5% 0;
+		.mail{
+			height: 39px;
+			width: 180px;
+			background: @fuscous-gray;
+			border:0;
+		}
+		.but{
+			height: 40px;
+			width: 37px;
+			background: @sea-buckthorn;
+			border: 2px solid @sea-buckthorn;
+
+		}
+
+	}
+	.icon{
+			li{
+				float: left;
+				padding: 4%;
+			}
+			a{
+				color: #fff;
+
+				&:hover{
+					color: @sea-buckthorn;
+				}
+			}
+		}	
+}
+
+/* ... */
+
+/* FOOTER */
+#footer{
+	background: @nav-color; 
+	color: @white;
+	font-size: 1.1em;
+	font-family: @raleway-font-stack;
+	font-weight: bold;
+	p{
+		padding: 5%;
+	}
+	.menubot{
+		padding: 2%;
+		li{
+			float: left;
+			padding: 1%;
+		}
+		a{
+			text-decoration: none;
+			color: @white;
+
+			&:hover{
+					color: @sea-buckthorn;
+				}
+		}
+	}
+}
+/* ... */
+
+
+@media screen and (max-width: 768px){
+	#blog{
+		align: center;
+	}
+	.pull-left, .pull-right {
+    	float: none;
+    	display: block;
+  }
+}
+
+
+
+
